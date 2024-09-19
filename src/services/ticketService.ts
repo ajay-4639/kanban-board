@@ -4,7 +4,7 @@ import type { TicketServiceApiResponse } from "../types";
 export const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "/services",
+    baseUrl: "https://api.quicksell.co/v1/internal",
   }),
   endpoints: builder => ({
     getTicketsAndUsers: builder.query<TicketServiceApiResponse, void>({
